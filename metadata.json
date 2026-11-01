@@ -1,0 +1,6 @@
+{
+  "name": "Minik Gurme - Bebek Ek Gıda & Menü Takibi",
+  "description": "Bebekler için 3 gün kuralı alerji takibi, ay ay gıda rehberi, günlük öğün ve menü planlayıcı ile kritik güvenlik bilgi kartları.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
