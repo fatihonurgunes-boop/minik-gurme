@@ -1,0 +1,30 @@
+{
+  "packageId": "com.minikgurme.ekgida",
+  "host": "ais-pre-3hb2wtx4c6cpyyoaflj7ui-632517013484.europe-west3.run.app",
+  "name": "Minik Gurme - Bebek Ek Gıda & Menü Takibi",
+  "launcherName": "Minik Gurme",
+  "themeColor": "#FAF8F5",
+  "navigationColor": "#FAF8F5",
+  "backgroundColor": "#FAF8F5",
+  "enableNotifications": false,
+  "startUrl": "/",
+  "iconUrl": "https://ais-pre-3hb2wtx4c6cpyyoaflj7ui-632517013484.europe-west3.run.app/pwa-512x512.png",
+  "maskableIconUrl": "https://ais-pre-3hb2wtx4c6cpyyoaflj7ui-632517013484.europe-west3.run.app/pwa-maskable-512x512.png",
+  "appVersionName": "1.0.0",
+  "appVersionCode": 1,
+  "shortcuts": [],
+  "generatorApp": "bubblewrap-cli",
+  "webManifestUrl": "https://ais-pre-3hb2wtx4c6cpyyoaflj7ui-632517013484.europe-west3.run.app/manifest.webmanifest",
+  "fallbackType": "customtabs",
+  "features": {
+    "playBilling": {
+      "enabled": false
+    }
+  },
+  "alphaDependencies": {
+    "enabled": false
+  },
+  "enableSiteSettingsShortcut": true,
+  "isChromeOSOnly": false,
+  "orientation": "portrait"
+}

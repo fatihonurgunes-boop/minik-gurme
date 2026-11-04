@@ -1,9 +1,10 @@
-import { BabyProfile, DailyMealPlan, FoodTrial } from '../types';
+import { BabyProfile, DailyMealPlan, FoodTrial, ThemeMode } from '../types';
 
 const STORAGE_KEYS = {
   PROFILE: 'ekgida_baby_profile_v1',
   TRIALS: 'ekgida_food_trials_v1',
   MEALS: 'ekgida_daily_meals_v1',
+  THEME: 'ekgida_theme_mode_v1',
 };
 
 // Calculate realistic dates for initial seed data
@@ -168,6 +169,24 @@ export function saveDailyMeals(meals: Record<string, DailyMealPlan>): void {
     localStorage.setItem(STORAGE_KEYS.MEALS, JSON.stringify(meals));
   } catch (e) {
     console.error('Failed to save meals', e);
+  }
+}
+
+export function loadThemeMode(): ThemeMode {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.THEME);
+    if (raw === 'dark' || raw === 'light') return raw;
+    return 'light';
+  } catch {
+    return 'light';
+  }
+}
+
+export function saveThemeMode(theme: ThemeMode): void {
+  try {
+    localStorage.setItem(STORAGE_KEYS.THEME, theme);
+  } catch (e) {
+    console.error('Failed to save theme', e);
   }
 }
 

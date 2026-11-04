@@ -88,24 +88,24 @@ export const BabyProfileModal: React.FC<BabyProfileModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-xs">
-      <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-stone-100 max-h-[90vh] overflow-y-auto space-y-5">
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/70 backdrop-blur-xs">
+      <div className="bg-white dark:bg-stone-900 text-stone-800 dark:text-stone-100 rounded-3xl max-w-lg w-full p-6 sm:p-7 shadow-2xl border border-stone-100 dark:border-stone-800 max-h-[90vh] overflow-y-auto space-y-5">
         {/* Header */}
-        <div className="flex items-center justify-between pb-3 border-b border-stone-100">
+        <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-stone-800">
           <div className="flex items-center gap-2">
             <span className="text-2xl">🧸</span>
             <div>
-              <h3 className="text-lg font-bold font-heading text-stone-900">
+              <h3 className="text-lg font-bold font-heading text-stone-900 dark:text-stone-100">
                 Bebeğin Profilini Düzenle
               </h3>
-              <p className="text-xs text-stone-500">
+              <p className="text-xs text-stone-500 dark:text-stone-400">
                 İsim, doğum tarihi ve avatarı kişiselleştirin.
               </p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="p-1 rounded-full text-stone-400 hover:text-stone-600 hover:bg-stone-100 transition cursor-pointer"
+            className="p-1 rounded-full text-stone-400 hover:text-stone-600 dark:hover:text-stone-200 hover:bg-stone-100 dark:hover:bg-stone-800 transition cursor-pointer"
           >
             <X className="w-5 h-5" />
           </button>
@@ -227,6 +227,13 @@ export const BabyProfileModal: React.FC<BabyProfileModalProps> = ({
               <RefreshCw className="w-3.5 h-3.5" />
               <span>Örnek Verilere Sıfırla</span>
             </button>
+          </div>
+
+          <div className="p-2.5 rounded-xl bg-emerald-50 border border-emerald-200/80 text-[11px] text-emerald-900 flex items-center gap-2">
+            <span>🔒</span>
+            <span className="leading-tight">
+              <strong>Gizlilik Güvencesi:</strong> Bebeğinize ait veriler %100 telefonunuzun/cihazınızın yerel hafızasında saklanır, asla buluta gönderilmez.
+            </span>
           </div>
         </div>
       </div>

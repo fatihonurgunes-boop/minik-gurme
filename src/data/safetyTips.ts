@@ -172,4 +172,28 @@ export const SAFETY_CARDS: SafetyCardItem[] = [
       ],
     },
   },
+  {
+    id: 'privacy-and-data-security',
+    title: 'Veri Gizliliği ve Bebeğinizin Mahremiyeti (%100 Cihaz İçi)',
+    badge: 'Gizlilik Güvencesi',
+    badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+    icon: '🔒',
+    shortSummary: 'Bebeğinizin isim, alerji ve besin kayıtları hiçbir uzak sunucuya aktarılmaz; yalnızca telefonunuzda yerel saklanır.',
+    keyPoints: [
+      'Sıfır Bulut Transferi: Sağlık ve beslenme verileri doğrudan cihazınızın kendi tarayıcı hafızasında (LocalStorage) şifreli saklanır.',
+      'Sıfır İzleyici / Çerezsiz: Uygulamada reklam, kullanıcı izleme veya Google Analytics kodları bulunmaz.',
+      'Tam Veri Kontrolü: Dilediğiniz an tek tıkla verilerinizi JSON formatında yedekleyebilir veya cihazdan kalıcı olarak silebilirsiniz.',
+      'Çevrimdışı Çalışma: Uygulama internet bağlantısına ihtiyaç duymadan tam kapasiteyle çalışır.',
+    ],
+    doAndDonts: {
+      dos: [
+        'Telefon değiştirirken "Profili Düzenle" veya "Gizlilik" menüsünden JSON yedeğinizi indirmeyi unutmayın.',
+        'Doktor kontrolüne giderken "Doktor Raporu" butonunu kullanarak özetinizi yazdırabilir veya kopyalayabilirsiniz.',
+      ],
+      donts: [
+        'Bebeğinize ait sağlık ve alerji kayıtlarını güvenilmeyen üçüncü taraf web sitelerine veya uygulamalara girmeyin.',
+      ],
+    },
+  },
 ];
+

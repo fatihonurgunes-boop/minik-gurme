@@ -82,3 +82,6 @@ export interface BabyProfile {
 }
 
 export type ActiveTab = 'tracker' | 'guide' | 'planner' | 'safety';
+
+export type ThemeMode = 'light' | 'dark';
+
